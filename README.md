@@ -13,7 +13,7 @@ Instrucciones de instalación y uso
 
 Esta app y su codigo fuente estarán disponibles más adelante en nuestro repositorio de GitHub, por ahora los invitamos a ingresar a nuestra página web y conocernos:
 
-https://github.com/unity-lab/cms-wp.wiki.git
+http://localhost/sigesa/unity-lab/
 
 Tecnologias utilizadas
 
