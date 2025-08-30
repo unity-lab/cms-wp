@@ -1,14 +1,17 @@
-# cms-wp
-repositorio asignatura Sistemas de Gestión de Contenidos - TSDWAD - segundo semestre 2025
+
+## Unity-lab
+
+Bienvenidos a nuestra empresa, llamada así representando la unión de compañeros con ganas de aprender y progresar en esta carrera.
 
 
-SIGESA - SISTEMA DE GESTION DE SALUD
+Nuestro proyecto inicial se llama "SIGESA", nos hemos propuesto la creación de una aplicación digital para la gestión y organización de entidades dedicadas a la salud, tales como: clínicas, sanatorios, centros y consultorios privados.
+Intentaremos dar respuesta y soluciones no solo a la parte de las entidades sino que también buscaremos facilitar el acceso a usuarios que necesiten llevar un control planificado y periódico de sus asuntos relacionados al control de su salud.
+Crearemos un nexo entre ambas partes, facilitando la atención y promoviendo la tranquilidad de los pacientes.
 
-Esta app full stack tiene por finalidad ofrecer servicios integrales a sus pacientes, gestion de turnos, trazabilidad de pedidos, estado de consultas e informes medicos.
 
-instrucciones de instalación y uso
+Instrucciones de instalación y uso
 
-esta app y su codigo fuente estan disponibles en el siguiente enlace github
+Esta app y su codigo fuente estarán disponibles más adelante en nuestro repositorio de GitHub, por ahora los invitamos a ingresar a nuestra página web y conocernos:
 
 https://github.com/unity-lab/cms-wp.wiki.git
 
