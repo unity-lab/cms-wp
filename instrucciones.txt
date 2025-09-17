@@ -1,0 +1,15 @@
+1. renombrar .env.dev a .env
+2. reemplazar el archivo connect.php adentro de la carpeta (htdocs) o por ej: C:\xampp\htdocs\nombre-del-proyecto
+3. si vamos a utilizar wordpress omitir el punto 2 y realizar lo siguiente:
+    1. descargar wordpress de la pagina .org
+    2 .descomprimir y renombrar la carpeta con el nombre de nuestro peoyecto (sigesa)
+    3. copiar adentro del directorio C:\xampp\htdocs\
+    4. editar el archivo wp.config.php con las variables del proyecto (son las del .env)
+    5. copiar wp.config.php editado adentro de la carpeta del proyecto (anteriormente wordpress descomprimido)
+        ej: en nuestro caso la carpeta wordpress se llama sigesa o sigesaintegral
+    6. ejecutar:  docker compose up para que se levanten los contenedores (mysql y phpmyadmin)
+    7. ejecutar start en xampp en la seccion de apache (servidor)
+    8. http://localhost:8081/ para entrar al contenedor de phpmyadmin(del docker)  
+    9. entrar al navegador y colocar http://localhost/sigesa o http://localhost/sigesa/wp-admin/
+        si aparece la pagina de de configurar el proyecto de wordpress solo hay que colocar los mismos
+        datos del .env (usuario:root, contraseña:123456789, basededatos: sigesa_db, host: localhost) 
