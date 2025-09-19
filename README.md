@@ -13,11 +13,16 @@ Instrucciones de instalación y uso
 
 Esta app y su codigo fuente estarán disponibles más adelante en nuestro repositorio de GitHub, por ahora los invitamos a ingresar a nuestra página web y conocernos:
 
-http://localhost/sigesa/unity-lab/
+https://unitylab.ct.ws/ 
+
+(host remoto infinityfree)
 
 Tecnologias utilizadas
 
 xampp 3.3.0
+
 phpmyadmin 5.2.1
+
 mysql 8.2.12
+
 wordpress 6.8.2
