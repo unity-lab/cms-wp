@@ -1,12 +1,12 @@
-name: 'sigesawordpress'
+name: 'unitylabconfiguraciones'
 
 services:
   servicio1:
     image: mysql:8.0
-    container_name: contenedorsigesawordpress
+    container_name: contenedormysql
     ports:
-      - "${PUERTO_EXTERNO_CONTENEDOR_MYSQL}:3307" # Mapea el puerto 3307 del host al 3307 del contenedor (lo toma de .env)
-    environment:
+      - "${PUERTO_EXTERNO_CONTENEDOR_MYSQL}:3306" # Mapea el puerto host al puerto del contenedor (lo toma de .env)
+    environment:      
       MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD_MYSQL} # lo toma del archivo .env
       MYSQL_DATABASE: ${BASE_DE_DATOS} # # lo toma del archivo .env
     # volumes:
@@ -14,13 +14,25 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
-    container_name: mi-phpmyadmin
+    container_name: contenedorphpmyadmin
     ports:
-      - "8081:80" # Mapea el puerto 8081 del host al 80 del contenedor
+      - "${PUERTOEXTERNO_PHPMYADMIN}:80" # Mapea el puerto 8081 del host al 80 del contenedor
     environment:
       PMA_HOST: servicio1 # El nombre del servicio de la base de datos en Docker Compose
     depends_on:
       - servicio1
+
+  phpmyadmin_remoto:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: contenedorphpmyadmin_remoto
+    ports:
+      - "8095:80" # Mapea el puerto 8081 del host al puerto 80 del contenedor
+    environment:
+      PMA_HOST: ${HOST_REMOTO} # El hostname del servidor remoto
+      PMA_PORT: ${PUERTO_REMOTO} # El puerto del servidor remoto
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD_REMOTO} # La contraseña de MySQL
+      MYSQL_USERNAME: ${MYSQL_USERNAME_REMOTO} # El nombre de usuario de MySQL
+    restart: unless-stopped    
 
 # volumes:
   # db_data:

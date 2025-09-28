@@ -1,21 +1,31 @@
-1. renombrar ".env.dev" a ".env"
+Paso obligatorio premiliminar a cualquier accion:
+    1. INSTALAR Y EJECUTAR DOCKER DESKTOP de lo contrario no funcionara la terminal al ejecutar comando docker
+    2. INSTALAR XAMPP solo marcar apache, no tildar las opciones mysql ni phpmyadmin
 
-2. reemplazar el archivo "connect.php" adentro de la carpeta (htdocs) o por ej: C:\xampp\htdocs\nombre-del-proyecto
+1. copiar ".env.dev" en esta misma carpeta y renombrar el archivo a ".env"
 
-3. si vamos a utilizar wordpress omitir el punto 2 y realizar lo siguiente:
-    1. descargar wordpress de la pagina .org
-    2 .descomprimir y renombrar la carpeta con el nombre de nuestro peoyecto (sigesa)
-    3. copiar adentro del directorio C:\xampp\htdocs\
-    4. editar el archivo wp.config.php con las variables del proyecto (son las del .env)
-    5. copiar wp.config.php editado adentro de la carpeta del proyecto (anteriormente wordpress descomprimido)
-        ej: en nuestro caso la carpeta wordpress se llamaria "sigesa" o "sigesaintegral"
-    6. ejecutar:  docker compose up para que se levanten los contenedores (mysql y phpmyadmin)
-    7. IMPORTANTE: ejecutar start en xampp en la seccion de apache (servidor)
-    8. http://localhost:8081/ para entrar al contenedor de phpmyadmin(del docker)  
-    9. entrar al navegador y colocar http://localhost/sigesa/wp-admin/ (TIENE DEMORA EN CARGAR)
-        si aparece la pagina de de configurar el proyecto de wordpress solo hay que colocar los mismos
-        datos del .env (usuario:root, contraseña:123456789, basededatos: sigesa_db, host: localhost)
+2. Instalar WORDPRESS:
+    1. descargar wordpress https://es-ar.wordpress.org/download/
+
+    2 .descomprimir el archivo <wordpress-6.8.2-es_AR.zip> y renombrar la carpeta descomprimida con el nombre de nuestro peoyecto (unitylab o como se llame en el momento)
+
+    3. copiar adentro del directorio C:\xampp\htdocs\AQUI
+
+    4. copiar este archivo wp.config.php adentro de la carpeta C:\xampp\htdocs\unitylab
+
+    5. copiar wp.config.php editado adentro de la carpeta del proyecto (anteriormente era wordpress descomprimido)    
+        ej: en nuestro caso la carpeta wordpress se llamaria "unitylab"
+
+    6. ejecutar:  <docker compose up> para que se levanten los contenedores (mysql y phpmyadmin)
+
+    7. IMPORTANTE: ejecutar start en xampp en la seccion de apache (servidor) para que levante el WORDPRESS
+
+    8. http://localhost:8090/ para entrar al contenedor de PHPMYADMIN que se esta ejecutando y acceder al GUI de mysql
+        aqui configure puertos 8090 en la variable de entorno para que no haya conflicto con otras versiones 
+
+    9. entrar al navegador y colocar http://localhost/unitylab/wp-admin/ (TIENE DEMORA EN CARGAR)
+    
         
-4. IMPORTANTE: 
-    1. cada vez que retomamos el proyecto: docker compose up en un terminal 
+3. IMPORTANTE: 
+    1. cada vez que retomamos el proyecto: docker compose down y luego docker compose up en un terminal (SOLO si hubo cambios de configuraciones)
     2. ejecutar start en xampp en la seccion de apache (servidor)

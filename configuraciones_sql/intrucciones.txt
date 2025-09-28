@@ -1,0 +1,11 @@
+IMPORTANTE PERSISTENCIA DE datos
+
+1. Entrar a phpmyadmin a traves de la ip o localhosto http://localhost:8090/
+2. Ir a la opcion del menu superior EXPORTAR
+3. Hacer click en exportar en el boto EXPORTAR abajo y se descarga un archivo .sql que contiene la configuracion de usuarios contraseñas y registros del sitio
+
+si vamos a instalar en otro equipo o instalacion desde contenedores
+
+1. cuando hagamos docker compose down y se destruya la info almacenada en db vamos a necesitar importar estos datos
+2. entrar en phpmyadmin e IMPORTAR unitylab_db.sql para tener las actualizaciones del trabajo en equipo realizado hasta el momento
+3. ir al menu importar, seleccionar el archivo .sql, tildar la db destino y luego importar.
