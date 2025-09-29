@@ -82,7 +82,7 @@
 					esc_html__( 'Designed with %s', 'twentytwentyfive' ),
 					'<a href="' . esc_url( __( 'https://wordpress.org', 'twentytwentyfive' ) ) . '" rel="nofollow">WordPress</a>'
 				);
-				?>
+				?><!--SOFTACULOUS-->
 			</p>
 			<!-- /wp:paragraph -->
 		</div>

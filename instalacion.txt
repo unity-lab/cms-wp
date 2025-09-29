@@ -29,3 +29,11 @@ Paso obligatorio premiliminar a cualquier accion:
 3. IMPORTANTE: 
     1. cada vez que retomamos el proyecto: docker compose down y luego docker compose up en un terminal (SOLO si hubo cambios de configuraciones)
     2. ejecutar start en xampp en la seccion de apache (servidor)
+
+4. ACTUALIZAR EL PROYECTO PARA TENER LA ULTIMA VERSION (complemento del import .sql):
+    copiar la carpeta "unitylab" que se encuentra aqui adentro del directorio "contenido" en la
+    carpeta C:\xampp\htdocs\AQUI PEGAR
+
+5. Enviar cambios:
+    si hubo modificacion del proyecto copiar la carpeta C:\xampp\htdocs\unitylab dentro de "contenido" de esta proyecto  
+        

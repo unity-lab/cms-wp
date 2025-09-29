@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-Four package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-10-14 04:39:46+0000\n"
+"PO-Revision-Date: 2025-08-17 00:47:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -11,22 +11,37 @@ msgstr ""
 "Language: es_AR\n"
 "Project-Id-Version: Themes - Twenty Twenty-Four\n"
 
-#. Theme Name of the theme
-#: style.css
-#, gp-priority: high
-msgid "Twenty Twenty-Four"
-msgstr "Twenty Twenty-Four"
-
 #. Description of the theme
 #: style.css
 #, gp-priority: high
 msgid "Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4."
 msgstr "Twenty Twenty-Four está diseñado para ser flexible, versátil y aplicable a cualquier sitio web. Su colección de plantillas y patrones se adapta a distintas necesidades, como presentar un negocio, escribir en un blog o exponer un trabajo. Se abren multitud de posibilidades con unos pocos ajustes de color y tipografía. Twenty Twenty-Four incluye variaciones de estilo y diseños de página completa para ayudar a acelerar el proceso de creación del sitio, es totalmente compatible con el editor del sitio y aprovecha las nuevas herramientas de diseño introducidas en WordPress 6.4."
 
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Twenty Twenty-Four"
+msgstr "Twenty Twenty-Four"
+
+#: patterns/text-centered-statement.php
+msgctxt "Pattern description"
+msgid "A centered text statement with a large amount of padding on all sides."
+msgstr "Una declaración de texto centrada con una gran cantidad de relleno en todos los lados."
+
+#: patterns/hidden-posts-heading.php
+msgctxt "Pattern title"
+msgid "Posts heading"
+msgstr "Encabezado de las entradas"
+
 #: patterns/text-title-left-image-right.php
 msgctxt "Pattern description"
 msgid "A title, a paragraph and a CTA button on the left with an image on the right."
 msgstr "Un título, un párrafo y un botón de llamada a la acción a la izquierda con una imagen a la derecha."
+
+#: patterns/text-project-details.php
+msgctxt "Pattern description"
+msgid "A text-only section for project details."
+msgstr "Una sección solo de texto para los detalles del proyecto."
 
 #: patterns/text-feature-grid-3-col.php
 msgctxt "Pattern description"
@@ -37,6 +52,26 @@ msgstr "Una cuadrícula de características de 2 filas y 3 columnas con encabeza
 msgctxt "Question in the FAQ pattern"
 msgid "Who is behind Études?"
 msgstr "¿Quién está tras Études?"
+
+#: patterns/text-faq.php
+msgctxt "Pattern description"
+msgid "A FAQ section with a large FAQ heading and a group of questions and answers."
+msgstr "Una sección de FAQ con un encabezado grande de FAQ y un grupo de preguntas y respuestas."
+
+#: patterns/text-centered-statement-small.php
+msgctxt "Pattern description"
+msgid "A centered italic text statement with compact padding."
+msgstr "Una declaración centrada de texto en cursiva con relleno compacto."
+
+#: patterns/text-alternating-images.php
+msgctxt "Pattern description"
+msgid "A text section, then a two-column section with text in one column and an image in the other."
+msgstr "Una sección de texto, luego una sección de dos columnas con texto en una y una imagen en la otra."
+
+#: patterns/testimonial-centered.php
+msgctxt "Pattern description"
+msgid "A centered testimonial section with an avatar, name, and job title."
+msgstr "Una sección centrada de recomendaciones con un avatar, nombre y cargo."
 
 #: patterns/team-4-col.php
 msgctxt "Pattern description"
@@ -87,6 +122,11 @@ msgstr "Un bloque con una llamada a la acción de suscripción al boletín para 
 msgctxt "Pattern description"
 msgid "A portfolio home page with a description and a 4-column post section with only feature images."
 msgstr "Una página de inicio de portfolio con una descripción y una sección de entradas de 4 columnas con sólo imágenes destacadas."
+
+#: patterns/page-home-portfolio-gallery.php
+msgctxt "Pattern description"
+msgid "A portfolio home page that features a gallery."
+msgstr "Una página de inicio de portfolio que destaca una galería."
 
 #: patterns/page-home-business.php
 msgctxt "Pattern description"
@@ -224,32 +264,45 @@ msgctxt "Block pattern category"
 msgid "Pages"
 msgstr "Páginas"
 
-#. Author URI of the theme
-#. Translators: WordPress link.
-#: style.css patterns/footer-centered-logo-nav.php:22
-#: patterns/footer-colophon-3-col.php:91 patterns/footer.php:117
-msgid "https://wordpress.org"
-msgstr "https://es-ar.wordpress.org"
+#: theme.json
+msgctxt "Custom template name"
+msgid "Single with Sidebar"
+msgstr "Individual con barra lateral"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page with Wide Image"
+msgstr "Página con imagen ancha"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page with Sidebar"
+msgstr "Página con barra lateral"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page No Title"
+msgstr "Página sin título"
 
 #: theme.json
 msgctxt "Template part name"
 msgid "Post Meta"
 msgstr "Metadatos de la entrada"
 
-#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
-msgctxt "Font size name"
-msgid "Extra Large"
-msgstr "Extra grande"
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr "Barra lateral"
 
-#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
-msgctxt "Font size name"
-msgid "Large"
-msgstr "Grande"
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "Pie de página"
 
-#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
-msgctxt "Font size name"
-msgid "Medium"
-msgstr "Mediano"
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "Cabecera"
 
 #: theme.json
 msgctxt "Space size name"
@@ -281,52 +334,35 @@ msgctxt "Space size name"
 msgid "1"
 msgstr "1"
 
-#: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
-#: styles/mint.json styles/onyx.json styles/rust.json theme.json
-msgctxt "Color name"
-msgid "Contrast"
-msgstr "Contraste"
-
-#: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
-#: styles/mint.json styles/onyx.json styles/rust.json theme.json
-msgctxt "Color name"
-msgid "Base"
-msgstr "Base"
+#: theme.json
+msgctxt "Gradient name"
+msgid "Vertical hard pewter to white"
+msgstr "Vertical peltre intenso a blanco"
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Single with Sidebar"
-msgstr "Individual con barra lateral"
+msgctxt "Gradient name"
+msgid "Vertical hard mint to white"
+msgstr "Vertical menta intenso a blanco"
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Page with Wide Image"
-msgstr "Página con imagen ancha"
+msgctxt "Gradient name"
+msgid "Vertical hard sage to white"
+msgstr "Vertical salvia intenso a blanco"
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Page with Sidebar"
-msgstr "Página con barra lateral"
+msgctxt "Gradient name"
+msgid "Vertical hard rust to white"
+msgstr "Vertical óxido intenso a blanco"
 
 #: theme.json
-msgctxt "Custom template name"
-msgid "Page No Title"
-msgstr "Página sin título"
+msgctxt "Gradient name"
+msgid "Vertical hard sandstone to white"
+msgstr "Vertical arenisca intenso a blanco"
 
 #: theme.json
-msgctxt "Template part name"
-msgid "Sidebar"
-msgstr "Barra lateral"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Footer"
-msgstr "Pie de página"
-
-#: theme.json
-msgctxt "Template part name"
-msgid "Header"
-msgstr "Cabecera"
+msgctxt "Gradient name"
+msgid "Vertical hard beige to white"
+msgstr "Vertical beige intenso a blanco"
 
 #: theme.json
 msgctxt "Gradient name"
@@ -390,8 +426,18 @@ msgstr "Base / 2"
 
 #: styles/rust.json
 msgctxt "Gradient name"
+msgid "Vertical hard rust to beige"
+msgstr "Vertical óxido intenso a beige"
+
+#: styles/rust.json
+msgctxt "Gradient name"
 msgid "Vertical rust to beige"
 msgstr "Vertical óxido a beige"
+
+#: styles/rust.json
+msgctxt "Gradient name"
+msgid "Vertical hard transparent rust to beige"
+msgstr "Vertical óxido intenso transparente a beige"
 
 #: styles/rust.json
 msgctxt "Gradient name"
@@ -410,13 +456,13 @@ msgstr "Óxido"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
-msgid "Accent / Four"
-msgstr "Acento / Cuatro"
+msgid "Accent / Five"
+msgstr "Acento / Cinco"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
-msgid "Accent / Five"
-msgstr "Acento / Cinco"
+msgid "Accent / Four"
+msgstr "Acento / Cuatro"
 
 #: styles/onyx.json theme.json
 msgctxt "Color name"
@@ -432,6 +478,36 @@ msgstr "Acento / Dos"
 msgctxt "Color name"
 msgid "Accent"
 msgstr "Acento"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard pewter to dark gray"
+msgstr "Vertical peltre intenso a gris oscuro"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard steel to dark gray"
+msgstr "Vertical acero intenso a gris oscuro"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard olive to dark gray"
+msgstr "Vertical oliva intenso a gris oscuro"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard cinnamon to dark gray"
+msgstr "Vertical canela intenso a gris oscuro"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard walnut to dark gray"
+msgstr "Vertical nogal intenso a gris oscuro"
+
+#: styles/onyx.json
+msgctxt "Gradient name"
+msgid "Vertical hard beige to dark gray"
+msgstr "Vertical beige intenso a gris oscuro"
 
 #: styles/onyx.json
 msgctxt "Gradient name"
@@ -510,6 +586,36 @@ msgstr "Remolino"
 
 #: styles/ice.json
 msgctxt "Gradient name"
+msgid "Vertical hard ink to ocean"
+msgstr "Vertical tinta intenso a océano"
+
+#: styles/ice.json
+msgctxt "Gradient name"
+msgid "Vertical hard ocean to slate"
+msgstr "Vertical océano intenso a pizarra"
+
+#: styles/ice.json
+msgctxt "Gradient name"
+msgid "Vertical hard ink to ice"
+msgstr "Vertical tinta intenso a hielo"
+
+#: styles/ice.json
+msgctxt "Gradient name"
+msgid "Vertical hard ocean to ice"
+msgstr "Vertical océano intenso a hielo"
+
+#: styles/ice.json
+msgctxt "Gradient name"
+msgid "Vertical hard slate to ice"
+msgstr "Vertical pizarra intenso a hielo"
+
+#: styles/ice.json
+msgctxt "Gradient name"
+msgid "Vertical hard ice to azure"
+msgstr "Vertical hielo intenso a azul"
+
+#: styles/ice.json
+msgctxt "Gradient name"
 msgid "Vertical ink to ocean"
 msgstr "Vertical tinta a océano"
 
@@ -547,6 +653,21 @@ msgstr "Hielo"
 msgctxt "Font size name"
 msgid "Extra Extra Large"
 msgstr "Extra extra grande"
+
+#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "Extra grande"
+
+#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "Grande"
+
+#: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "Mediano"
 
 #: styles/fossil.json styles/ice.json styles/maelstrom.json theme.json
 msgctxt "Font size name"
@@ -608,10 +729,22 @@ msgctxt "Color name"
 msgid "Base / Two"
 msgstr "Base / Dos"
 
+#: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
+#: styles/mint.json styles/onyx.json styles/rust.json theme.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "Contraste"
+
 #: styles/ember.json styles/maelstrom.json
 msgctxt "Color name"
 msgid "Contrast / 2"
 msgstr "Contraste / 2"
+
+#: styles/ember.json styles/fossil.json styles/ice.json styles/maelstrom.json
+#: styles/mint.json styles/onyx.json styles/rust.json theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "Base"
 
 #: styles/ember.json styles/fossil.json
 msgctxt "Gradient name"
@@ -697,106 +830,6 @@ msgstr "Études ofrece soluciones integrales de consultoría, gestión, diseño 
 msgctxt "Pattern title"
 msgid "Title text and button on left with image on right"
 msgstr "Texto del título y botón a la izquierda con imagen a la derecha"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard pewter to white"
-msgstr "Vertical peltre intenso a blanco"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard mint to white"
-msgstr "Vertical menta intenso a blanco"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard sage to white"
-msgstr "Vertical salvia intenso a blanco"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard rust to white"
-msgstr "Vertical óxido intenso a blanco"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard sandstone to white"
-msgstr "Vertical arenisca intenso a blanco"
-
-#: theme.json
-msgctxt "Gradient name"
-msgid "Vertical hard beige to white"
-msgstr "Vertical beige intenso a blanco"
-
-#: styles/rust.json
-msgctxt "Gradient name"
-msgid "Vertical hard rust to beige"
-msgstr "Vertical óxido intenso a beige"
-
-#: styles/rust.json
-msgctxt "Gradient name"
-msgid "Vertical hard transparent rust to beige"
-msgstr "Vertical óxido intenso transparente a beige"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard pewter to dark gray"
-msgstr "Vertical peltre intenso a gris oscuro"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard steel to dark gray"
-msgstr "Vertical acero intenso a gris oscuro"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard olive to dark gray"
-msgstr "Vertical oliva intenso a gris oscuro"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard cinnamon to dark gray"
-msgstr "Vertical canela intenso a gris oscuro"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard walnut to dark gray"
-msgstr "Vertical nogal intenso a gris oscuro"
-
-#: styles/onyx.json
-msgctxt "Gradient name"
-msgid "Vertical hard beige to dark gray"
-msgstr "Vertical beige intenso a gris oscuro"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard ink to ocean"
-msgstr "Vertical tinta intenso a océano"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard ocean to slate"
-msgstr "Vertical océano intenso a pizarra"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard ink to ice"
-msgstr "Vertical tinta intenso a hielo"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard ocean to ice"
-msgstr "Vertical océano intenso a hielo"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard slate to ice"
-msgstr "Vertical pizarra intenso a hielo"
-
-#: styles/ice.json
-msgctxt "Gradient name"
-msgid "Vertical hard ice to azure"
-msgstr "Vertical hielo intenso a azul"
 
 #: patterns/text-project-details.php:35 patterns/text-project-details.php:43
 msgctxt "Descriptive text for the feature area"
@@ -1726,6 +1759,13 @@ msgstr "Pastilla"
 #: functions.php:28
 msgid "Arrow icon"
 msgstr "Icono de flecha"
+
+#. Author URI of the theme
+#. Translators: WordPress link.
+#: style.css patterns/footer-centered-logo-nav.php:22
+#: patterns/footer-colophon-3-col.php:91 patterns/footer.php:117
+msgid "https://wordpress.org"
+msgstr "https://es-ar.wordpress.org"
 
 #. Author of the theme
 #: style.css

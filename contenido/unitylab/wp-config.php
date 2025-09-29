@@ -20,6 +20,8 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', 'C:\xampp\htdocs\unitylab\wp-content\plugins\wp-super-cache/' );
 define( 'DB_NAME', 'unitylab_db' );
 
 /** Database username */
@@ -48,14 +50,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'E%epK{KPOPZ3c~2.eJ9tQDA]5BCW6Sd@x5s^!Q3=V=180f<:<d[L#(V:.W;3,0|2' );
-define( 'SECURE_AUTH_KEY',  'Fjo%>T$w5~d#Q{Ka!ppaNB&!BQ4qua{~.gWdHj0UJphpvgb0v>2{t.#YA:F@ix!!' );
-define( 'LOGGED_IN_KEY',    'FT00Z|nip>E G&upEi~Yq:Vb+9LI2X3*HyPA+ydaD(A3Ea-x3p/7u9.[>JzLF;2&' );
-define( 'NONCE_KEY',        '5Aok2pqAR9:p`FD-[HRJMtZ]zm9Z}/s#IO}1(7on?C}[DL.*U7+]3>t)JYATRD#?' );
-define( 'AUTH_SALT',        'LK5kM3g|#1zcF$-)3bXnhaW-IVn=6EoNnAG?>c)##2jB}y-@e.%goFK6?rO[*6Yx' );
-define( 'SECURE_AUTH_SALT', '3OY]{Wi{CuY}5b.71{Fjs=u&rj]Z/w*^C!sDlT$Z>F05mq!WNBS=oji?TnCY<J=v' );
-define( 'LOGGED_IN_SALT',   'Y4ijnla%k,XE$3w&!,rjda^`^vc2y.b2^A%8Om1@_:F)!uw}!(wW)$bv&Y|qt=bP' );
-define( 'NONCE_SALT',       'Ai|g9:C`xxV:$iAZjK09b]|<O^ag(MbN)bM[3(@CeH%v>^N!l#iuL7YYS?jBaI]k' );
+define( 'AUTH_KEY',         'dbxwgrfzvvugl2lhyhcbdfjz0mx78npx2sjmuhn1l6pmdpelga7ep0jv3gzgbnpv' );
+define( 'SECURE_AUTH_KEY',  'uq3y3q0snfpfuozihqgcxkaehk4alc4pkz4nplr7r9luykxfgvihtafeiqlcrkdj' );
+define( 'LOGGED_IN_KEY',    'mnveso1xfmzow4skel8md4kbnwtlchkgglqwbsq8kipgjtypl7zc7f2r3o4b7hfc' );
+define( 'NONCE_KEY',        '7lv8bzpxndyxd9jp5etwbhpuk1kj4arjb4lrwtafhw20a3bnqoutwjgudliubdlc' );
+define( 'AUTH_SALT',        'tzyezsdnmzy8mqa3pe84x6o9eddbx0zmsxzrsocpn8qelfvfxxwuf6j6p2ojzesx' );
+define( 'SECURE_AUTH_SALT', 'kuknpi5jqtsu65hcxx1rhco1qchnw3mznndpwcv1qguqe3vgdjleghe7a1xrithr' );
+define( 'LOGGED_IN_SALT',   'rhetksrlsgw8ktmlu6ponhiqrgfqey6oqprjkduq5i8h7ixtsyhob34om1a0mwgx' );
+define( 'NONCE_SALT',       'moabwexfwofmkgjyw2xepdxprqhmqbjjrbb9veavyjuqkrlnifqr7di1z6a2rxqq' );
 
 /**#@-*/
 
@@ -71,7 +73,7 @@ define( 'NONCE_SALT',       'Ai|g9:C`xxV:$iAZjK09b]|<O^ag(MbN)bM[3(@CeH%v>^N!l#i
  *
  * @link https://developer.wordpress.org/advanced-administration/wordpress/wp-config/#table-prefix
  */
-$table_prefix = 'wp_';
+$table_prefix = 'wplx_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -85,11 +87,14 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define('WP_HOME', 'http://localhost/unitylab');
+define('WP_SITEURL', 'http://localhost/unitylab');
 
 /* That's all, stop editing! Happy publishing. */
 
