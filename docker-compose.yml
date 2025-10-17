@@ -6,7 +6,9 @@ services:
     container_name: contenedormysql
     ports:
       - "${PUERTO_EXTERNO_CONTENEDOR_MYSQL}:3306" # Mapea el puerto host al puerto del contenedor (lo toma de .env)
-    environment:      
+    environment:
+      MYSQL_USER: fernando
+      MYSQL_PASSWORD: ${OTRO_USUARIO_ROOT_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD_MYSQL} # lo toma del archivo .env
       MYSQL_DATABASE: ${BASE_DE_DATOS} # # lo toma del archivo .env
     # volumes:

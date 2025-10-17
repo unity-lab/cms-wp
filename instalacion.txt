@@ -35,5 +35,6 @@ Paso obligatorio premiliminar a cualquier accion:
     carpeta C:\xampp\htdocs\AQUI PEGAR
 
 5. Enviar cambios:
-    si hubo modificacion del proyecto copiar la carpeta C:\xampp\htdocs\unitylab dentro de "contenido" de esta proyecto  
+    si hubo modificacion del proyecto copiar la carpeta C:\xampp\htdocs\unitylab dentro de este PROYECTO
+    SOLO Y UNICAMENTE htdocs
         
