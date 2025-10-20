@@ -1,0 +1,17 @@
+name: 'unitylabremoto'
+
+services: 
+  phpmyadmin_remoto:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: contenedorphpmyadmin_remoto
+    ports:
+      - "8095:80" # Mapea el puerto 8081 del host al puerto 80 del contenedor
+    environment:
+      PMA_HOST: ${HOST_REMOTO} # El hostname del servidor remoto
+      PMA_PORT: ${PUERTO_REMOTO} # El puerto del servidor remoto
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD_REMOTO} # La contraseña de MySQL
+      MYSQL_USERNAME: ${MYSQL_USERNAME_REMOTO} # El nombre de usuario de MySQL
+    restart: unless-stopped    
+
+# volumes:
+  # db_data:

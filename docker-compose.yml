@@ -1,0 +1,46 @@
+name: 'wpunitylab'
+
+services:
+  serviciomysql:
+    image: mysql:latest
+    container_name: contenedorserviciomysql
+    ports:
+      - "${PUERTO_EXTERNO_CONTENEDOR_MYSQL}:3306" # Mapea el puerto host al puerto del contenedor (lo toma de .env)
+    environment:
+      MYSQL_USER: ${OTRO_USUARIO_ROOT}
+      MYSQL_PASSWORD: ${OTRO_USUARIO_ROOT_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD_MYSQL} # lo toma del archivo .env
+      MYSQL_DATABASE: ${BASE_DE_DATOS} # # lo toma del archivo .env
+    volumes:
+      # 1. Persistencia de Datos
+      - db_data:/var/lib/mysql
+      # 2. Carga Automática del SQL
+      - ./backup_DB:/docker-entrypoint-initdb.d
+  serviciophpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: contenedorserviciophpmyadmin
+    ports:
+      - "${PUERTOEXTERNO_PHPMYADMIN}:80" # Mapea el puerto 8081 del host al 80 del contenedor
+    environment:
+      PMA_HOST: serviciomysql # El nombre del servicio de la base de datos en Docker Compose
+    depends_on:
+      - serviciomysql 
+
+  serviciowordpress:
+    image: wordpress:latest # Imagen oficial de WordPress
+    container_name: contenedorserviciowordpress
+    depends_on:
+      - serviciomysql # Asegura que la base de datos se inicie primero
+    ports:
+      - "${PUERTO_EXTERNO_WORDPRESS}:80" # Mapea un puerto en tu host (ej. 8000) al puerto 80 del contenedor WordPress
+    environment:
+      # Las variables de entorno de WordPress deben coincidir con la configuración de tu MySQL
+      WORDPRESS_DB_HOST: serviciomysql:3306 # El nombre del servicio DB y su puerto
+      WORDPRESS_DB_USER: ${OTRO_USUARIO_ROOT} # Usa tu variable de entorno
+      WORDPRESS_DB_PASSWORD: ${OTRO_USUARIO_ROOT_PASSWORD} # Usa tu variable de entorno
+      WORDPRESS_DB_NAME: ${BASE_DE_DATOS} # Usa tu variable de entorno
+    volumes:
+    # uso en modo BIND MOUNT    
+      - ./wordpress-files:/var/www/html
+volumes:
+  db_data:
