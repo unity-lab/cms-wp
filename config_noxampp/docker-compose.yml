@@ -11,9 +11,6 @@ services:
       MYSQL_PASSWORD: ${OTRO_USUARIO_ROOT_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${ROOT_PASSWORD_MYSQL} # lo toma del archivo .env
       MYSQL_DATABASE: ${BASE_DE_DATOS} # # lo toma del archivo .env
-    volumes:
-    # uso en modo BIND MOUNT    
-      - db_data:/var/lib/mysql
 
   serviciophpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
