@@ -1,0 +1,8 @@
+2025-10-23T09:09:20+00:00 INFO Automatic database update triggered.
+2025-10-23T09:09:20+00:00 INFO Scheduling database updates (from 10.2.2)...
+2025-10-23T09:09:20+00:00 INFO   [10.3.0] Scheduled 'wc_update_1030_add_comments_date_type_index'.
+2025-10-23T09:09:20+00:00 ERROR There was an error scheduling database updates.
+2025-10-23T09:09:22+00:00 INFO Automatic database update triggered.
+2025-10-23T09:09:22+00:00 INFO Scheduling database updates (from 10.2.2)...
+2025-10-23T09:09:22+00:00 INFO   [10.3.0] Scheduled 'wc_update_1030_add_comments_date_type_index'.
+2025-10-23T09:09:22+00:00 ERROR There was an error scheduling database updates.
