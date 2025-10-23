@@ -1,19 +1,22 @@
 Paso obligatorio premiliminar a cualquier accion:
 
-    1. Ubicarse con la consola adentro de la carpeta del proyecto de git por ejemplo  c:/misproyectos/cms-wp
+    1. INSTALAR xampp (desactivar todo solo que se instale unicamente php/apache, destildar mysql , phpmyadmin, filezila, perl etc).
+        copiar la carpeta unitylab de este repo adentro de la carpeta htdocs que esta dentro del xampp
 
     2. INSTALAR Y EJECUTAR DOCKER DESKTOP (en windows) de lo contrario no funcionara la terminal al ejecutar comando docker
 
-    3. Copiar ".env.dev" en esta misma carpeta y renombrar el archivo a ".env"
+    3. Copiar ".env.dev" en esta misma carpeta y renombrar el archivo copiado a ".env" (PORQUE FUNCIONA COMO TEMPLATE)
+        ambos archivos tienen que estar al mismo nivel de carpeta o directorio.
 
-    4. Ejecutar:  docker compose up para que se levanten los contenedores (mysql y phpmyadmin)
+    4. Ejecutar en un terminal:  docker compose up (para que se levanten los contenedores: mysql y phpmyadmin)-
+       y luego recien ejecutar xampp y hacer click en el servicio APACHE start!
 
     5. En el navegador colocar http://localhost:8090/ 
         para entrar al contenedor de PHPMYADMIN que se esta ejecutando y acceder al GUI de mysql
         aqui configure puertos 8090 en la variable de entorno para que no haya conflicto con otras versiones 
 
-    6. En otra ventana o pestaña del navegador colocar http://localhost:8000 (TIENE DEMORA como 3 o 5 minutos EN CARGAR)
-            http://localhost:8000/wp_admin para acceder al menu de usuarios de wordpress
+    6. En otra ventana o pestaña del navegador colocar localhost/unitylab/ (TIENE DEMORA como 3 o 5 minutos EN CARGAR)
+            localhost/unitylab/wp_admin para acceder al menu de usuarios de wordpress
     
     7. IMPORTANTE: 
             cada vez que retomamos el proyecto: 
@@ -25,4 +28,20 @@ Paso obligatorio premiliminar a cualquier accion:
     8. en la terminal donde se ejecuta docker apretar control + c para detener la ejecucion de docker (y sus contenedores)
 
     9. cuando modifiques el proyecto debera exportar la base de datos y sobreescribir la que existe en el directorio backup_DB
-        
+
+    **************** seccion wordpress *****************    
+
+    1. OPCIONAL: ir al menu lateral y seleccionar Elementor (entre comentarios y plantillas), porque 
+                 ELEMENTOR tiene la mayoria de sus widgets pagos y no son accesibles.
+    2. OPCIONAL: buscar entre plugins (añadir plugin) e instalar "Classic Editor"    
+    3. PAGINAS: (agregar pagina en menu paginas abajo de entradas y multimedia)
+        1. Agregar pagina (inicio: por ejemplo), colocar el nombre y contenido, estilos, formato de parrafo, etc.
+        2. consignas creacion PAGINAS: 
+            Página Inicio: Configurar esta opción para que siempre dirija al "home" del sitio.
+            Página Presentación: Crear esta página, que servirá como portada del sitio. Incluir las consignas de valoración y el listado de los integrantes que las aceptan.(Misión, Visión)
+            Página Contacto: Crear una página con al menos 3 formas de contacto para el grupo (formulario de contacto, e-mail, web, redes sociales).
+    4. HOME/INICIO: creamos la pagina home o inicio (le podemos inventar cualquier nombre: EJ: sigesa soluciones):
+            1. luego de creada la pagina ir al boton PUBLICAR
+            2. ir a la opcion AJUSTES  y luego LECTURA, en la opcion "tu pagina de inicio muestra" en 
+            portada seleccionamos la pagina de inicio/home que creamos antes y luego GUARDAR CAMBIOS.
+    5. OPCIONAL IMPORTANTE: ajustes generales se modifica el dominio, nombre y extras.

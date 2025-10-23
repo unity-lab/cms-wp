@@ -13,6 +13,8 @@ Esta app y su codigo fuente estarán disponibles más adelante en nuestro reposi
 
 https://unitylab.ct.ws/
 
+entorno local: https://localhost/unitylab
+
 Tecnologias utilizadas
 
 xampp / phpmyadmin / mysql / wordpress / plugin Elementor / docker / infinityfree (host)
